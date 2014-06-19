@@ -4,6 +4,7 @@ Feature: Greet user
   we're not stuffy that's what the branding people
   tell us.
 
+  @fast @dirty
   Scenario: Greet visitors who are not logged in
     Given I'm not logged in
     When I visit the homepage

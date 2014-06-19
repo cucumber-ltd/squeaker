@@ -15,10 +15,10 @@
           <ul>
             <li class="greeting">
               <% unless @logged_in_user.unknown? %>
-                Hello you're logged in
+                Welcome <%= @logged_in_user.username %> you're logged in
                 <%= button_to "Log Out", user_session_path, :method => :delete %>
               <% else %>
-                Hello there!
+                Hello stranger
                 Why not <%= link_to "log in", new_user_session_path %> or perhaps <%= link_to "create an account", new_user_path %>?
               <% end %>
             </li>

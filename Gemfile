@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+#ruby "2.0.0"
 
 gem 'rails', '~> 3.2'
 gem 'thin'
 gem 'jquery-rails'
 
 group :production do
-  gem "pg"
+#  gem "pg"
 end
 
 group :development, :test do
@@ -20,6 +20,7 @@ group :test do
   gem 'rspec'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'debugger'
 end
 
 group :assets do
